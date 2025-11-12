@@ -28,26 +28,6 @@ authorization, token exchange, user info retrieval, and session handling.
 | Refresh Token    | (Planned feature for longer sessions)               |
 
 
-
-⚙️ Google Cloud Setup
-
-Go to Google Cloud Console → Credentials
-
-Create a new OAuth 2.0 Client ID
-
-Set Authorized redirect URI →
-http://localhost:8000/auth/callback
-
-Copy and save:
-
-Client ID
-
-Client Secret
-
-🧠 Core Concept
-
-This library abstracts away the entire OAuth2 flow into simple FastAPI functions:
-
 Step	Function	Purpose
 🧩 1	setup_google_auth(config)	Initialize Google OAuth client
 🔗 2	login_redirect(request)	Redirect user to Google for login
